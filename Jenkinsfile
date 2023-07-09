@@ -8,23 +8,23 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/username/repository.git'
+                git 'https://github.com/apiTestUserr/HerokupTestAutomation.git'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
             post {
                 always {
-                    cucumber '**/target/cucumber-report.json'
+                    cucumber '**/target/cucumber-report.html'
                 }
             }
         }
