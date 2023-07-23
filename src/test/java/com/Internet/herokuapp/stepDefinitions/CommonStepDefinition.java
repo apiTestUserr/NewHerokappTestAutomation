@@ -69,7 +69,7 @@ public class CommonStepDefinition {
 
 	}
 
-	@After
+	
 
 	public void tearDown(Scenario scenario) throws IOException {
 
