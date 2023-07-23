@@ -34,7 +34,7 @@ public class Config {
 
 	}
 	
-	
+//	Bonjour je suis Automaticienne de tests logiciels balalalalala
 	
 	public static BasePage getPage() {
 
