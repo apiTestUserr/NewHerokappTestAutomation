@@ -29,6 +29,8 @@ pipeline {
         always {
             // Archiver le fichier JSON du rapport
             archiveArtifacts artifacts: 'target/cucumber.json', fingerprint: true
+                     // Archiver le fichier html du rapport
+            archiveArtifacts artifacts: 'target/cucumber-html-reports/cucumber.html', fingerprint: true
         }
     }
 }
