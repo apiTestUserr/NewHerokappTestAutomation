@@ -91,8 +91,8 @@
                     </goals>
                     <configuration>
                         <projectName>cucumber-jvm-example</projectName>
-                        <outputDirectory>C:\\Data\\cucumber-html-reports</outputDirectory>
-                        <cucumberOutput>C:\\Data\\cucumber.json</cucumberOutput>
+                        <outputDirectory>target\cucumber-html-reports</outputDirectory>
+                        <cucumberOutput>target\cucumber.json</cucumberOutput>
                     </configuration>
                 </execution>
             </executions>

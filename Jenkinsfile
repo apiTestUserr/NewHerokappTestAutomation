@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/apiTestUserr/HerokupTestAutomation.git'
+                git 'https://github.com/apiTestUserr/NewRepoInternetHerookapp.git'
             }
         }
 
@@ -22,9 +22,11 @@ pipeline {
             steps {
                 bat 'mvn verify'
             }
+            
             post {
                 always {
-                    archiveArtifacts artifacts: 'C:/Data/*.html', fingerprint: true
+                    archiveArtifacts artifacts: 'target/cucumber-html-reports/*.html', fingerprint: true
+                    archiveArtifacts artifacts: 'target/cucumber.json', fingerprint: true
                 }
             }
         }

@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = "com.Internet.herokuapp.stepDefinitions",
 
 
-		plugin = { "json:C:\\Data\\cucumber.json", "pretty", "html:C:\\Data\\cucumber-html-reports\\cucumber.html" }
+		plugin = { "json:target/cucumber.json", "pretty", "html:target/cucumber-html-reports/cucumber.html" }
 
 //		
 )
