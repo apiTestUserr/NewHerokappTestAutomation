@@ -9,7 +9,10 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<cucumber.options>--plugin json:target/cucumber-reports/cucumber.json</cucumber.options>
+
 	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -59,6 +62,52 @@
 
 
 	</dependencies>
+
+<build>
+    <plugins>
+        <!-- other plugins -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.1.2</version>
+            <configuration>
+                <testFailureIgnore>false</testFailureIgnore>
+                <includes>
+                    <include>**/*Runner.java</include>
+                </includes>
+            </configuration>
+        </plugin>
+        
+            <plugin>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.5.0</version>
+            <executions>
+                <execution>
+                    <id>execution</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>generate</goal>
+                    </goals>
+                    <configuration>
+                        <projectName>cucumber-jvm-example</projectName>
+                        <outputDirectory>C:\\Data\\cucumber-html-reports</outputDirectory>
+                        <cucumberOutput>C:\\Data\\cucumber.json</cucumberOutput>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+        
+    </plugins>
+    
+    
+    
+</build>
+
+
+
+
+
 
 
 

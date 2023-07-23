@@ -20,11 +20,11 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'mvn verify'
             }
             post {
                 always {
-                    cucumber '**/target/cucumber-report.html'
+                    archiveArtifacts artifacts: 'C:/Data/*.html', fingerprint: true
                 }
             }
         }

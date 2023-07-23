@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+Test set: com.Internet.herokuapp.helper.runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 1, Skipped: 0, Time elapsed: 25.88 s <<< FAILURE! -- in com.Internet.herokuapp.helper.runner.Runner
+Home Page.Verify home page contents are correct -- Time elapsed: 2.963 s <<< FAILURE!
+java.lang.AssertionError: expected:<[A/B Testing, Add/Remove Elements, Basic Auth, Broken Images, Challenging DOMggggg, Checkboxes, Context Menu, Digest Authentication, Disappearing Elements, Drag and Drop, Dropdown, Dynamic Content, Dynamic Controls, Dynamic Loading, Entry Ad, Exit Intent, File Download, File Upload, Floating Menu, Forgot Password, Form Authentication, Frames, Geolocation, Horizontal Slider, Hovers, Infinite Scroll, Inputs, JQuery UI Menus, JavaScript Alerts, JavaScript onload event error, Key Presses, Large & Deep DOM, Multiple Windows, Nested Frames, Notification Messages, Redirect Link, Secure File Download, Shadow DOM, Shifting Content, Slow Resources, Sortable Data Tables, Status Codes, Typos, WYSIWYG Editor]> but was:<[A/B Testing, Add/Remove Elements, Basic Auth, Broken Images, Challenging DOM, Checkboxes, Context Menu, Digest Authentication, Disappearing Elements, Drag and Drop, Dropdown, Dynamic Content, Dynamic Controls, Dynamic Loading, Entry Ad, Exit Intent, File Download, File Upload, Floating Menu, Forgot Password, Form Authentication, Frames, Geolocation, Horizontal Slider, Hovers, Infinite Scroll, Inputs, JQuery UI Menus, JavaScript Alerts, JavaScript onload event error, Key Presses, Large & Deep DOM, Multiple Windows, Nested Frames, Notification Messages, Redirect Link, Secure File Download, Shadow DOM, Shifting Content, Slow Resources, Sortable Data Tables, Status Codes, Typos, WYSIWYG Editor]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.Internet.herokuapp.stepDefinitions.HomeStepDefinition.a_list_of_the_following_subpages_is_displayed(HomeStepDefinition.java:37)
+	at ✽.a list of the following sub-pages is displayed(file:///C:/eclipse-workspace-AJC/Internet.herokuapp/src/test/resources/HomePage.feature:11)
+
+Home Page.Open Dynamic Controls page -- Time elapsed: 2.920 s <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<https://the-internet.herokuapp.com/dynamic_controls>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.Internet.herokuapp.stepDefinitions.CommonStepDefinition.the_something_page_opens(CommonStepDefinition.java:63)
+	at ✽.the "Dynamic Controls" page opens(file:///C:/eclipse-workspace-AJC/Internet.herokuapp/src/test/resources/HomePage.feature:61)
+
+Home Page.Open Form Authentication page -- Time elapsed: 2.924 s <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<https://the-internet.herokuapp.com/login>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.Internet.herokuapp.stepDefinitions.CommonStepDefinition.the_something_page_opens(CommonStepDefinition.java:63)
+	at ✽.the "Form Authentication" page opens(file:///C:/eclipse-workspace-AJC/Internet.herokuapp/src/test/resources/HomePage.feature:61)
+
+Home Page.Open Inputs page -- Time elapsed: 2.919 s <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<https://the-internet.herokuapp.com/inputs>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.Internet.herokuapp.stepDefinitions.CommonStepDefinition.the_something_page_opens(CommonStepDefinition.java:63)
+	at ✽.the "Inputs" page opens(file:///C:/eclipse-workspace-AJC/Internet.herokuapp/src/test/resources/HomePage.feature:61)
+
+Cr�ation dun employe.Cr�ation dun employe avec des informations valides -- Time elapsed: 1.683 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'Je veux cr�er un employe avec le nom "amira", le salaire "123k" et lage "23"' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Je veux cr�er un employe avec le nom {string}, le salaire {string} et lage {string}")
+public void je_veux_cr_er_un_employe_avec_le_nom_le_salaire_et_lage(String string, String string2, String string3) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Je fais une requ�te POST")
+public void je_fais_une_requ_te_post() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Je devrais obtenir une r�ponse avec le statut {int}")
+public void je_devrais_obtenir_une_r_ponse_avec_le_statut(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

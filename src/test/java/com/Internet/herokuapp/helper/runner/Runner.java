@@ -9,13 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 
-		features = "src/test/resources/employee.feature",
+		features = "src/test/resources",
 
 		glue = "com.Internet.herokuapp.stepDefinitions",
 
-		tags = "@tag2",
 
-		plugin = { "json:target/cucumber-reports/cucumber.json", "pretty", "html:target/cucumber-report.html" }
+		plugin = { "json:C:\\Data\\cucumber.json", "pretty", "html:C:\\Data\\cucumber-html-reports\\cucumber.html" }
 
 //		
 )
