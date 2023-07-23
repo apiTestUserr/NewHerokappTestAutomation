@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.Internet.herokuapp.helper.runner.Config;
 import com.Internet.herokuapp.pages.BasePage;
@@ -27,8 +28,12 @@ public class CommonStepDefinition {
 	public void init() {
 
 		Config.confDriver();
+		
+		 // Set Chrome to run in headless mode
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
 
-		BasePage.driver = new ChromeDriver();
+		BasePage.driver = new ChromeDriver(chromeOptions);
 
 		Config.maximise();
 	}
