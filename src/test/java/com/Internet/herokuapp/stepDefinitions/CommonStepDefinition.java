@@ -32,6 +32,7 @@ public class CommonStepDefinition {
 		 // Set Chrome to run in headless mode
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
+        chromeOptions.setBinary("C:\\Users\\benah\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 
 		BasePage.driver = new ChromeDriver(chromeOptions);
 
